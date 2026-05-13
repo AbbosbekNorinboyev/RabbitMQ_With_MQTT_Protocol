@@ -11,3 +11,10 @@ spring:
     port: 5672
     username: guest
     password: guest
+
+mqtt:
+  broker:
+    url: tcp://localhost:1883
+  client:
+    id: spring-mqtt-client
+  topic: sensors/temperature
