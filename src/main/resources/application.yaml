@@ -5,3 +5,9 @@ server:
 spring:
   application:
     name: RabbitMQWithMQTTProtocol
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
