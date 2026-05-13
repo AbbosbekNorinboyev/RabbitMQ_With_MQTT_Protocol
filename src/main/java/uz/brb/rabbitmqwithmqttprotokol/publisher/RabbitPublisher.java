@@ -1,4 +1,4 @@
-package uz.brb.rabbitmqwithmqttprotokol.producer;
+package uz.brb.rabbitmqwithmqttprotokol.publisher;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -8,7 +8,7 @@ import uz.brb.rabbitmqwithmqttprotokol.dto.MessageDTO;
 
 @Service
 @RequiredArgsConstructor
-public class RabbitProducer {
+public class RabbitPublisher {
     private final RabbitTemplate rabbitTemplate;
 
     public void send(MessageDTO dto) {
